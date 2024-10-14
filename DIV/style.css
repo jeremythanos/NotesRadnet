@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body,div,ul,li,a,h1,h2,h3,h4,p{
+    margin: 0;padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    --bg-color: #ffb18c;
+    background-image: url(../Img/radnet02-blur.png);
+    background-size: cover;
+    height: 130dvh;
+    --text-color: #333;
+    --dark-color: rgb(255,130,77);
+    --faq-color: #F9F6EE;
+}
+
+span{
+    font-weight: bolder;
+}
+.faq{
+    max-width: clamp(400px,100%,800px);
+    margin: auto;
+    border: solid 3px #fff;
+    border-radius: 10px;
+    padding: 3px;
+    margin-top: 4rem;
+
+}
+
+details {
+    background-color: var(--faq-color);
+    border: #000 solid 3px;
+    margin: 7px;
+    padding: 7px;
+    border-radius: 10px;
+    /* le ponemos un height para aplicarle una transicion */
+    max-height: 54px;
+    transition: max-height 2.4s;
+    overflow: hidden;
+}
+
+details[open] {
+    max-height: 600px;
+}
+
+
+.contenido{
+    padding:  5px 10px;
+    margin: 10px;
+    margin-bottom: 0;
+    border-top: 1.8px solid #FF0000; /*PARA LAS RALLITAS DENTRO DEL LOS SUMMARY*/
+    font-size: .8rem;
+    cursor: text;
+}
+/* aplicando colores a los numeros de cada detail, para distinguirlos  */
+details b {
+    background-color: #669966;
+    padding: 1px 3px;
+    border-radius: 5px;
+    color: #FFF;
+}
+details:nth-child(2) b {
+    background-color: #0000FF;
+    padding: 1px 3px;
+    border-radius: 5px;
+    color: #fff;
+}
+details:nth-child(3) b {
+    background-color: #FF00FF;
+    padding: 1px 3px;
+    border-radius: 5px;
+    color: #fff;
+}
+details:nth-child(4) b {
+    background-color: #FF00FF;
+    padding: 1px 3px;
+    border-radius: 5px;
+    color: #fff;
+}
+details:nth-child(5) b {
+    background-color: #FF0000;
+    padding: 1px 3px;
+    border-radius: 5px;
+    color: #fff;
+}
+details:nth-child(6) b {
+    background-color: #000;
+    padding: 1px 3px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+
+/*estilos especificos para el summary ----start---- */
+summary::marker{
+    color: darkred;
+    content: '';
+    
+}
+summary::before{
+    content: '+';
+    color: red;
+    position: absolute;
+    right: 10px;
+    font-size: 20px;
+
+}
+
+/* cunado esta avierto */
+details[open] summary::before{
+    content: '-';
+    font-size: 20px;
+}
+
+summary{
+    user-select: none;
+    position: relative;
+}
+/*estilos especificos para el summary ----start---- */
+
+
+ul,li{
+    list-style:none
+    
+}
+
+@media screen and (min-width: 500px) {
+
+    .faq {
+        max-width: clamp(300px, 70%, 600px);
+    }
+
+}
+
+/* atc unable to provide */
+
+.atcut{
+    color: #f00
+}
+.atC0{
+    color: #44F;
+}
+
+.bold{
+    font-weight: bolder;
+    color: #000;
+}
+
+/* para los ma */
+.ma{
+    background-color: rgb(202, 11, 228);
+    padding: 1px 3px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+
+
+h3{
+    margin-top: 5px;
+    color:#00FF00;
+    background-color: #317f4f;
+    text-align: center;
+    border-radius: 9px;
+    user-select: none;
+}
+
+/* --------------FOOOTER------------ */
+.footer {
+    background-color: #0008;
+    width: 50%;
+    padding: 100px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 50px;
+    max-width: auto;
+    padding: 16px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.text{
+text-decoration: none;
+color: #fff;
+letter-spacing: 2px;
+align-items: center;
+text-align: center;
+margin-top: 9px;
+}
+
+
+/* foto */
+
+.radnet-foto{
+    width: 76px;
+    height: 30px;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin-left: 30px;
+    margin-top: 0;
+}
