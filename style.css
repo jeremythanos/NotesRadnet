@@ -10,7 +10,7 @@ body,div,ul,li,a,h1,h2,h3,h4,p{
 body{
     font-family: sans-serif;
     --bg-color: #ffb18c;
-    background-image: url(../Img/radnet02-blur.png);
+    background-image: url(Img/radnet02-blur.png);
     background-size: cover;
     height: 130dvh;
     --text-color: #333;
